@@ -1,5 +1,3 @@
 Hi This is first line
 this is second line
-this is the comment added from new_branch
-adding this line to push in project-for-test repo
-Hello Hi!
+this is 3rd line
