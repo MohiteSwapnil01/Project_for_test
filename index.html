@@ -3,10 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My website</title>
+    <title>Happy Diwali 🪔</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            background: linear-gradient(135deg, #4a003f, #a32929, #ff9d00);
+            overflow: hidden;
+        }
+
+        .card {
+            width: 90%;
+            max-width: 600px;
+            padding: 45px 25px;
+            border: 1px solid rgba(255, 215, 0, 0.6);
+            border-radius: 25px;
+            background: rgba(0, 0, 0, 0.25);
+            box-shadow: 0 0 35px rgba(255, 193, 7, 0.3);
+        }
+
+        .diya {
+            font-size: 75px;
+            animation: glow 1.5s infinite alternate;
+        }
+
+        h1 {
+            color: #ffd700;
+            font-size: clamp(2rem, 7vw, 3.5rem);
+            margin: 20px 0;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.7;
+            margin-bottom: 25px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 13px 28px;
+            color: #4a003f;
+            background: #ffd700;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            background: white;
+            transform: scale(1.05);
+        }
+
+        .footer {
+            margin-top: 30px;
+            color: #ffe8a3;
+            font-size: 14px;
+        }
+
+        @keyframes glow {
+            from {
+                filter: drop-shadow(0 0 5px gold);
+                transform: scale(1);
+            }
+            to {
+                filter: drop-shadow(0 0 25px orange);
+                transform: scale(1.1);
+            }
+        }
+    </style>
 </head>
+
 <body>
-This is my website. We  are currently working on it. Please check back later for updates!  
-build four 
+
+    <div class="card">
+        <div class="diya">🪔</div>
+
+        <h1>Happy Diwali!</h1>
+
+        <p>
+            May the festival of lights bring happiness,
+            prosperity, success, and peace into your life.
+            <br><br>
+            Let your life shine as brightly as the Diwali diyas!
+        </p>
+
+        <a href="#" class="button"
+           onclick="alert('Wishing you and your family a very Happy Diwali! 🪔'); return false;">
+            Celebrate the Joy ✨
+        </a>
+
+        <div class="footer">
+            🪔 Spread Light • Share Happiness • Celebrate Together 🪔
+        </div>
+    </div>
+
 </body>
 </html>
